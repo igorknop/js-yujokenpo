@@ -35,3 +35,93 @@
   );
   z-index: -1;
 }
+
+
+main {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  z-index: 3;
+}
+
+#panel {
+  width: 35%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#game-area {
+  width: 65%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#score-box {
+  color: white;
+  font-size: 1rem;
+  justify-content: space-between;
+  padding: 0.3rem;
+}
+
+#card-details {
+  color: white;
+  font-size: 1rem;
+}
+
+#card-name {
+  font-size: 0.8rem;
+}
+
+#card-type {
+  font-size: 1rem;
+}
+
+#card-versus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#versus-top, #versus-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+#next-duel {
+  display: none;
+}
+
+
+.card-hand {
+  height: 9rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.5rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card-in-field {
+  height: 11.2rem;
+  width: 8rem;
+  border-radius: 1rem;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-in-field img {
+  object-fit: cover;
+}

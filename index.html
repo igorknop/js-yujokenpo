@@ -21,22 +21,39 @@
         <source src="./src/assets/video/yugi.mp4" type="video/mp4">
       </video>
     </div>
-    <h1>YuJoKenPo</h1>
-    <section id="panel">
-      <div id="source-box">
+    <section id="panel" class="framed-golden-2">
+      <div id="score-box" class="framed">
         <span id="score">Player: 0 | Enemy: 0</span>
       </div>
       <div id="avatar">
 
       </div>
-      <div id="card-details">
-        <p id="card-name"></p>
-        <p id="card-type"></p>
+      <div id="card-details" class="framed">
+        <p id="card-name">NAME</p>
+        <p id="card-type">TYPE</p>
       </div>
     </section>
     <section id="game-area">
-      <div class="card-hand"></div>
+      <div id="enemy" class="card-hand framed"></div>
+      <section id="versus-top">
+        <div id="card-versus">
+          <div class="card-in-field">
+            <img id="enemy-field-card" src="" height="180" width="125">
+          </div>
+          <img height="100" src="./src/assets/icons/millenium2.png">
+          <div class="card-in-field">
+            <img id="player-field-card" src="" height="180" width="125">
+          </div>
+        </div>
+      </section>
+      <section id="versus-bottom">
+        <button id="next-duel" class="rpgui-button"
+        onclick="nextDuel()"
+        >GANHOU</button>
+      </section>
+      <div id="player" class="card-hand framed"></div>
     </section>
+
   </main>
   <script src="./src/scripts/engine.js" defer></script>
 </body>
