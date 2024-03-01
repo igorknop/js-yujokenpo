@@ -16,7 +16,27 @@
 
 <body>
   <main>
+    <div id="video-in-background">
+      <video id="video" autoplay loop muted>
+        <source src="./src/assets/video/yugi.mp4" type="video/mp4">
+      </video>
+    </div>
     <h1>YuJoKenPo</h1>
+    <section id="panel">
+      <div id="source-box">
+        <span id="score">Player: 0 | Enemy: 0</span>
+      </div>
+      <div id="avatar">
+
+      </div>
+      <div id="card-details">
+        <p id="card-name"></p>
+        <p id="card-type"></p>
+      </div>
+    </section>
+    <section id="game-area">
+      <div class="card-hand"></div>
+    </section>
   </main>
   <script src="./src/scripts/engine.js" defer></script>
 </body>
